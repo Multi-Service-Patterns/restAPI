@@ -33,5 +33,5 @@ Esta API permite gerenciar usuários, playlists e músicas. Ela se integra com u
 
 1. Clone este repositório.
 2. Instale as dependências (Flask e requests).
-3. Configure a URL do seu banco de dados Firebase em `FIREBASE_DB_URL`.
+3. Configure a URL do seu banco de dados Firebase em `FIREBASE_DB_URL` usando um .env.
 4. Execute o aplicativo Flask com `python app.py`. 

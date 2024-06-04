@@ -1,9 +1,14 @@
+import os
+from dotenv import load_dotenv
 from flask import Flask, request, jsonify
 import requests
 
 app = Flask(__name__)
 
-FIREBASE_DB_URL = "https://api-rest-music-default-rtdb.firebaseio.com"
+load_dotenv()
+db_url = os.getenv('DATABASE_URL')
+
+FIREBASE_DB_URL = db_url
 
 @app.route('/users', methods=['GET', 'POST'])
 def users():
